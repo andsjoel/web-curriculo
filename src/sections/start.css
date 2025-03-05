@@ -5,71 +5,149 @@
     justify-content: center;
     align-items: center;
     /* overflow: hidden; */
+    font-family: 'Tiktok';
 }
 
-/* .start-section div {
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
     width: 100vw;
     height: 100vh;
-} */
+    padding: 5px;
+}
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    transition: background 0.3s;
+    font-size: calc(2vw + 2vh);
+    border: 1px solid transparent;
+}
 
-ul {
+.inicio {
+    text-align: center;
+    grid-column: span 1;
+    font-size: 6vw;
+}
+
+.inicio:hover {
+    background: url('../assets/images/fonts_bg/background1.jpg') no-repeat center center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 10s;
+}
+
+.sobre {
+    /* text-align: center; */
+    grid-column: span 1;
+    font-size: 12vw; 
+}
+
+.sobre:hover {
+    background: url('../assets/images/fonts_bg/background2.jpg') center center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 10s;
+}
+
+.linha-tempo { 
+    grid-row: span 1; 
+    font-size: 4vw; 
+}
+
+.linha-tempo:hover {
+    background: url('../assets/images/fonts_bg/background3.jpg') center center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 10s;
+}
+
+.resumo { 
+    grid-row: span 1; 
+    font-size: 10vw; 
+}
+
+.resumo:hover {
+    background: url('../assets/images/fonts_bg/background4.jpg') center center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 10s;
+}
+
+.certificados {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    /* align-items: center; */
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    align-items: end;
+    font-size: 4vw;
 }
 
-li {
-    list-style: none;
-    position: absolute;
+.certificados:hover {
+    background: url('../assets/images/fonts_bg/background5.jpg') center center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 10s;
 }
 
-li:hover {
-    background-color: yellow;
+.habilidades {
+    grid-row: 2;
+    grid-column: 1;
 }
 
-.li-inicio {
-    font-size: 10vw;
-    top: 0;
-    left: 0;
-    background-color: red;
+.habilidades:hover {
+    background: url('../assets/images/fonts_bg/background6.jpg') center center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 10s;
 }
 
-.li-sobre {
-    font-size: 17vw;
-    top: 0;
-    left: 40%;
+.projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: span 2;
+    font-size: 5vw;
 }
 
-.li-timeline {
-    font-size: 3vw;
-    margin-left: -90px;
-    top: 0;
-    right: 0;
+.projetos:hover {
+    background: url('../assets/images/fonts_bg/background7.jpg') center center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 10s;
 }
 
-.li-resumo {
-    font-size: 18vw;
-    top: 20%;
-    left: 0;
+.contato {
+    grid-row: span 2;
+    font-size: 6vw;
 }
 
-.li-certif {
-    font-size: 8vw;
-    top: 20%;
-    right: 0;
+.contato:hover {
+    background: url('../assets/images/fonts_bg/background8.jpg') center center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 10s;
 }
 
-.li-projetos {
-    font-size: 12vw;
-    top: 35%;
-    right: 0;
+a:hover {
+    border: 1px solid black;
+    -webkit-text-stroke-width: 1px;
 }
 
-.li-contato {
-    font-size: 18vw;
-    bottom: 0;
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    a {
+        font-size: calc(3vw + 3vh);
+    }
 }

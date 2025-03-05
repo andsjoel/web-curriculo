@@ -8,15 +8,20 @@ const Start = () => {
     return (
         <section className="start-section">
             
-                <ul>
-                    <li className="li-inicio">Início</li>
-                    <li className="li-sobre">Sobre</li>
-                    <li className="li-timeline">Linha do Tempo</li>
-                    <li className="li-resumo">Resumo</li>
-                    <li className="li-certif">Certificados</li>
-                    <li className="li-projetos">Projetos</li>
-                    <li className="li-contato">Contato</li>
-                </ul>
+            <div class="container">
+                <a href="#inicio" class="inicio">Início</a>
+                <a href="#about" class="sobre">Sobre</a>
+                <div>
+                    test
+                </div>
+                <a href="#resume" class="resumo">Resumo</a>
+                <a href="#timeline" class="linha-tempo">Linha do Tempo</a>
+                <a href="#certificates" class="certificados">Certificados</a>
+                <a href="#skills" class="habilidades">Habilidades</a>
+                <a href="#projects" class="projetos">Projetos</a>
+                <a href="#contato" class="contato">Contato</a>
+                
+            </div>
             
             {showResumo && <Resume onClose={() => setShowResumo(false)} />}
         </section>
