@@ -4,18 +4,18 @@
 }
 
 @font-face {
-  font-family: Tiktok;
+  font-family: Forta;
   src:url(./assets/fonts/forta/Forta.ttf);
 }
 
 @font-face {
-  font-family: Stanberry;
-  src:url(./assets/fonts/stanberry/Stanberry.ttf);
+  font-family: LineNexa;
+  src:url(./assets/fonts/lineNexa/lineNexa.ttf);
 }
 
 @font-face {
-  font-family: White;
-  src:url(./assets/fonts/white_on_black/White\ On\ Black.ttf);
+  font-family: stanBerry;
+  src:url(./assets/fonts/stanberry/Stanberry.ttf);
 }
 
 ::-webkit-scrollbar-track {

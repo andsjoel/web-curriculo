@@ -8,8 +8,18 @@ const Resume = ({ onClose }) => {
                 <button>Abrir Resumo em PDF</button>
                 <button onClick={onClose}>X</button>
             </header>
-            <h2 className="">Resumo</h2>
-            <p className="">Sou um desenvolvedor apaixonado por tecnologia!</p>
+            <section>
+              <div className="div-name">
+                <h2 className="title-name">Anderson Joel</h2>
+                <p className="title-phrase">Sou um desenvolvedor web e acadêmico de ADS. Entusiasta estudante de tecnologias sempre em busca de novos conhecimentos.</p>
+              </div>
+              <div className="div-dados">
+                <a>andsjoel@gmail.com</a>
+                <a>+55 61 9 99760064</a>
+                <a>github.com/andsjoel</a>
+                <a>linkedin.com/in/andsjoel</a>
+              </div>
+            </section>
         </div>
   );
 };

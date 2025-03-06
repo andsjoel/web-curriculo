@@ -1,5 +1,5 @@
 .resume-section {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(50px);
     width: 80%;
     height: 80%;
@@ -10,6 +10,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'LineNexa';
+    padding: 35px;
 }
 
 .resume-section header {
@@ -22,6 +24,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .resume-section header button {
@@ -30,4 +35,41 @@
     border: none;
     color: white;
     cursor: pointer;
+    font-family: 'Forta';
+}
+
+.resume-section section {
+    /* background-color: rgba(255, 255, 255, 0.267); */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    /* border: 1px solid rgba(0, 0, 0, 0.4);
+    height: 100%; */
+}
+
+.div-name {
+    width: 50%;
+}
+
+.div-dados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    align-items: end;
+}
+
+.div-dados a {
+    font-size: 25px;
+    margin-top: -8px;
+}
+
+.title-name {
+    font-family: 'stanBerry';
+    font-size: 62px;
+}
+
+.title-phrase {
+    font-size: 28px;
 }
