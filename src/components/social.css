@@ -1,0 +1,32 @@
+.div-social {
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.div-social a {
+    margin: 15px;
+}
+
+.div-social a img {
+    width: 65px;
+    /* opacity: .5; */
+}
+
+.div-social a:hover {
+    animation: jump-shaking 0.83s;
+    cursor: pointer;
+}
+
+@keyframes jump-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateY(-9px) rotate(8deg) }
+    35% { transform: translateY(-9px) rotate(16deg) }
+    55% { transform: translateY(-9px) rotate(-8deg) }
+    65% { transform: translateY(-9px) rotate(0deg) }
+    75% { transform: translateY(-9px) rotate(-8deg) }
+    90% { transform: translateY(4px) rotate(0) }
+    100% { transform: translateY(0) rotate(0) }
+  }

@@ -1,0 +1,21 @@
+.header {
+    background-color: rgb(55, 51, 73);
+    position: absolute;
+    top: -100px;
+    width: 100vw;
+    height: 65px;
+    transition: top .5s ease-in-out;
+}
+
+.visible {
+    top: 0;
+    z-index: 999;
+}
+
+.header ul {
+    display: flex;
+}
+
+.header li a {
+    font-size: 15px;
+}

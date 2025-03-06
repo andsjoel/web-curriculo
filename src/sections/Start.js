@@ -1,29 +1,28 @@
 import React, { useState } from "react";
 import "./start.css"
-import Resume from "../components/Resume";
+import Social from "../components/Social";
 
 const Start = () => {
-    const [showResumo, setShowResumo] = useState(true);
+
+    const handleClick = () => {
+        window.location.reload()
+    }
 
     return (
         <section className="start-section">
             
-            <div class="container">
-                <a href="#inicio" class="inicio">Início</a>
-                <a href="#about" class="sobre">Sobre</a>
-                <div>
-                    test
-                </div>
-                <a href="#resume" class="resumo">Resumo</a>
-                <a href="#timeline" class="linha-tempo">Linha do Tempo</a>
-                <a href="#certificates" class="certificados">Certificados</a>
-                <a href="#skills" class="habilidades">Habilidades</a>
-                <a href="#projects" class="projetos">Projetos</a>
-                <a href="#contato" class="contato">Contato</a>
+            <div className="container">
+                <a id="tag-a" href="#inicio" className="inicio">Início</a>
+                <a id="tag-a" href="#about" className="sobre">Sobre</a>
+                <Social />
+                <a id="tag-a" onClick={ handleClick } href="#resume" className="resumo">Resumo</a>
+                <a id="tag-a" href="#timeline" className="linha-tempo">Linha do Tempo</a>
+                <a id="tag-a" href="#certificates" className="certificados">Certificados</a>
+                <a id="tag-a" href="#skills" className="habilidades">Habilidades</a>
+                <a id="tag-a" href="#projects" className="projetos">Projetos</a>
+                <a id="tag-a" href="#contact" className="contato">Contato</a>
                 
             </div>
-            
-            {showResumo && <Resume onClose={() => setShowResumo(false)} />}
         </section>
     );
 }

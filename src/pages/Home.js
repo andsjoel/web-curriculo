@@ -1,33 +1,39 @@
-import React, { useState } from "react";
-import "./home.css"
+import React, { useState } from "react";import "./home.css"
 import Start from "../sections/Start";
 import About from "../sections/About";
 import TimeLine from "../sections/TimeLine";
 import Certificates from "../sections/Certificates";
 import Projects from "../sections/Projects";
 import Skills from "../sections/Skills";
+import Contact from "../sections/Contact";
+import Header from "../components/Header";
+import Resume from "../components/Resume";
 
 const Home = () => {
-    const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+    const [isVisible, setIsVisible] = useState(false);
+    const [showResumo, setShowResumo] = useState(true);
+    
 
-    const handleMouseMove = (e) => {
-      const posX = e.clientX;
-      const posY = e.clientY;
-      setCursorPosition({ x: posX, y: posY });
+
+    const clickTag = (e) => {      
+        const scrollTop = e.target.scrollTop;
+        setIsVisible(scrollTop > 100);
+        if (scrollTop => 1) {
+            setShowResumo(false)
+        }
     };
 
-      window.addEventListener("mousemove", handleMouseMove);
-
     return (
-        <main>
-            <div style={{left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px`}} className="cursor-dot"></div>
-            <div style={{left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px`}} className="cursor-outline"></div>
+        <main onScroll={ clickTag } id="main">
+            <Header isVisible={isVisible} />
+            {showResumo && <Resume onClose={() => setShowResumo(false)} />}
             <Start />
             <About />
             <TimeLine />
             <Certificates />
             <Projects />
             <Skills />
+            <Contact />
         </main>
     );
 }
